@@ -25,8 +25,11 @@ export const AddUser = () => {
       name,
       date
     }
-    addUser(newUser);
+    setTimeout(() => {
+      
+      addUser(newUser);
     history.push("/");
+    },2000);
   }
 
 
