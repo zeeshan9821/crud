@@ -31,8 +31,11 @@ export const EditUser = (props) => {
 
   const onSubmit = (e) => {
     e.preventDefault();
-    editUser(selectedUser);
+    setTimeout(() => {
+      editUser(selectedUser);
     history.push("/")
+
+    }, 2000);
   }
 
   return (
